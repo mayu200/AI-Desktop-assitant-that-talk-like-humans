@@ -192,7 +192,14 @@ if __name__ == "__main__":
                     remember = open("Remember.txt","r")
                     speak("You told me " + remember.read()) 
 
+#Calculator function
+                elif "calculate" in query:
+                    from Calculatenumbers import WolfRamAlpha
+                    from Calculatenumbers import Calc
+                    query = query.replace("calculate","")
+                    query = query.replace("vikram","")
+                    Calc(query)
 
 
 
-                    
+                   
